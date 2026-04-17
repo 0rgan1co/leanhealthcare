@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lean Healthcare · Trazabilidad que mejora el flujo de los procesos</title>
+  <meta name="description" content="Modernización de procesos en salud pública y privada con enfoque Lean Healthcare. Trazabilidad integral, ciclos cortos de mejora, KPIs medibles en 30–90 días." />
+  <meta property="og:title" content="Lean Healthcare · Trazabilidad que mejora el flujo de los procesos" />
+  <meta property="og:description" content="Modernización de procesos en salud con ciclos cortos de mejora y KPIs medibles en 30–90 días." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            ink: { 900: '#0b1a1a', 700: '#1f2937', 500: '#475569' },
+            teal: { 50: '#ecfdf5', 600: '#0d7b6e', 700: '#0b6359', 800: '#0a4f48' },
+            coral: { 400: '#fb8a6b', 500: '#f47458', 600: '#e15a3f' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: #0b1a1a; }
+    .stage-letter { font-feature-settings: "ss01"; letter-spacing: -0.04em; }
+    details > summary { list-style: none; cursor: pointer; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] summary .chev { transform: rotate(90deg); }
+    .chev { transition: transform .2s ease; }
+    .grain { background-image: radial-gradient(#0b6359 1px, transparent 1px); background-size: 24px 24px; opacity: .04; }
+  </style>
+</head>
+<body class="bg-white text-ink-900 antialiased">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-white/85 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-2 font-bold text-ink-900">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-coral-500"></span>
+        Lean Healthcare
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-ink-500">
+        <a href="#miradas" class="hover:text-ink-900">Enfoque</a>
+        <a href="#etapas" class="hover:text-ink-900">Etapas</a>
+        <a href="#matriz" class="hover:text-ink-900">Prioridades</a>
+        <a href="#preguntas" class="hover:text-ink-900">Diagnóstico</a>
+      </nav>
+      <a href="#contacto" class="inline-flex items-center gap-2 rounded-full bg-ink-900 text-white text-sm font-semibold px-4 py-2 hover:bg-teal-700 transition">
+        Agendar conversación
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden">
+    <div class="absolute inset-0 grain pointer-events-none"></div>
+    <div class="max-w-6xl mx-auto px-6 pt-20 pb-24 md:pt-28 md:pb-32 relative">
+      <span class="inline-flex items-center gap-2 rounded-full border border-teal-700/20 bg-teal-50 text-teal-800 text-xs font-semibold uppercase tracking-wider px-3 py-1">
+        Modernización en salud · Pública y privada
+      </span>
+      <h1 class="mt-6 text-4xl md:text-6xl font-extrabold leading-[1.05] tracking-tight max-w-4xl">
+        Trazabilidad que <span class="text-teal-700">mejora el flujo</span> de los procesos.
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-ink-500 max-w-3xl leading-relaxed">
+        Acompañamos a hospitales, ministerios y sistemas privados a evolucionar sus procesos clínicos y administrativos con enfoque <strong class="text-ink-900">Lean Healthcare</strong>: ciclos cortos, evidencia medible, y un modelo <em>humano + IA</em> que libera tiempo a los equipos para lo que importa.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-3">
+        <a href="#contacto" class="inline-flex items-center gap-2 rounded-full bg-coral-500 text-white font-semibold px-6 py-3 hover:bg-coral-600 transition shadow-sm">
+          Agendar conversación →
+        </a>
+        <a href="#etapas" class="inline-flex items-center gap-2 rounded-full border border-ink-900/15 text-ink-900 font-semibold px-6 py-3 hover:bg-slate-50 transition">
+          Ver las 6 etapas
+        </a>
+      </div>
+
+      <!-- KPIs strip -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-slate-200 pt-10">
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-teal-700">30–90</div>
+          <div class="text-sm text-ink-500 mt-1">días por ciclo medible</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-teal-700">≥30%</div>
+          <div class="text-sm text-ink-500 mt-1">ahorro potencial en farmacia</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-teal-700">85–95%</div>
+          <div class="text-sm text-ink-500 mt-1">recupero de facturación</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-teal-700">−70%</div>
+          <div class="text-sm text-ink-500 mt-1">tiempo en áreas críticas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tres miradas -->
+  <section id="miradas" class="bg-slate-50 border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-24">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Tres miradas, un mismo flujo</h2>
+        <p class="mt-4 text-ink-500 text-lg leading-relaxed">
+          Ninguna mejora vale si descuida alguno de los tres. Diseñamos en simultáneo para que paciente, profesional y proceso se muevan en la misma dirección.
+        </p>
+      </div>
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <div class="bg-white border border-slate-200 rounded-2xl p-7 hover:shadow-sm transition">
+          <div class="text-xs font-bold uppercase tracking-wider text-coral-600">01 · Paciente</div>
+          <h3 class="mt-2 text-xl font-bold">Claridad y dignidad</h3>
+          <p class="mt-3 text-ink-500 leading-relaxed">Recorridos predecibles y humanos: qué siente, qué entiende, qué resuelve en cada contacto con el sistema.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-2xl p-7 hover:shadow-sm transition">
+          <div class="text-xs font-bold uppercase tracking-wider text-coral-600">02 · Profesional</div>
+          <h3 class="mt-2 text-xl font-bold">Tiempo y foco</h3>
+          <p class="mt-3 text-ink-500 leading-relaxed">Sacar peso administrativo para devolverle criterio clínico al equipo. Menos pantallas, más pacientes.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-2xl p-7 hover:shadow-sm transition">
+          <div class="text-xs font-bold uppercase tracking-wider text-coral-600">03 · Procesos</div>
+          <h3 class="mt-2 text-xl font-bold">Flujo y trazabilidad</h3>
+          <p class="mt-3 text-ink-500 leading-relaxed">Dónde se pierde valor, dónde se puede simplificar. Datos que fluyen sin retrabajo ni ambigüedad.</p>
+        </div>
+      </div>
+
+      <!-- Método zentauro -->
+      <div class="mt-16 rounded-2xl bg-ink-900 text-white p-8 md:p-12 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-teal-700/30 rounded-full blur-3xl -translate-y-20 translate-x-20"></div>
+        <div class="relative">
+          <div class="text-xs font-bold uppercase tracking-wider text-coral-400">Modelo zentauro</div>
+          <h3 class="mt-3 text-2xl md:text-3xl font-bold max-w-3xl">El humano pide, la IA propone, el humano dispone.</h3>
+          <p class="mt-4 text-slate-300 leading-relaxed max-w-3xl">
+            La decisión clínica, ética y de política pública siempre es humana. La IA automatiza tareas repetitivas, sugiere alternativas y sintetiza información — pero no decide sola.
+          </p>
+          <div class="mt-8 grid md:grid-cols-3 gap-4 max-w-4xl">
+            <div class="rounded-xl border border-white/10 p-5">
+              <div class="text-coral-400 text-sm font-bold">1 · Humano pide</div>
+              <p class="mt-2 text-sm text-slate-300">Profesionales y equipos definen el problema y la pregunta.</p>
+            </div>
+            <div class="rounded-xl border border-white/10 p-5">
+              <div class="text-coral-400 text-sm font-bold">2 · IA propone</div>
+              <p class="mt-2 text-sm text-slate-300">Automatiza, sintetiza, sugiere alternativas con evidencia.</p>
+            </div>
+            <div class="rounded-xl border border-white/10 p-5">
+              <div class="text-coral-400 text-sm font-bold">3 · Humano dispone</div>
+              <p class="mt-2 text-sm text-slate-300">La decisión final siempre queda en manos del equipo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 Etapas -->
+  <section id="etapas" class="max-w-6xl mx-auto px-6 py-20 md:py-24">
+    <div class="max-w-3xl">
+      <div class="text-xs font-bold uppercase tracking-wider text-teal-700">Trazabilidad integral</div>
+      <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">Las 6 etapas del recorrido</h2>
+      <p class="mt-4 text-ink-500 text-lg leading-relaxed">
+        Cada etapa es independiente, entrega un KPI en 30–90 días y genera los datos que alimentan la siguiente. Se puede arrancar por una, por dos en paralelo, o abordar el recorrido completo.
+      </p>
+    </div>
+
+    <div class="mt-12 grid md:grid-cols-2 gap-5">
+      <!-- ETAPA A -->
+      <article class="group relative rounded-2xl border border-slate-200 p-7 hover:border-teal-700/40 hover:shadow-md transition bg-white">
+        <div class="flex items-start justify-between">
+          <span class="stage-letter text-5xl font-extrabold text-teal-700/90">A</span>
+          <span class="text-xs font-bold uppercase tracking-wider bg-coral-500/10 text-coral-600 rounded-full px-3 py-1">Arrancar aquí</span>
+        </div>
+        <h3 class="mt-4 text-xl font-bold">Inteligencia de Proveedores</h3>
+        <div class="mt-3 flex flex-wrap gap-2 text-xs">
+          <span class="bg-teal-50 text-teal-800 rounded-full px-2.5 py-1 font-semibold">KPI · ≥30% ahorro farmacia</span>
+          <span class="bg-slate-100 text-ink-700 rounded-full px-2.5 py-1 font-semibold">30–60 días</span>
+        </div>
+        <p class="mt-4 text-sm text-ink-500">Compras, Farmacia, Dirección Administrativa, Dirección Médica, Comité de Farmacia.</p>
+        <details class="mt-5 border-t border-slate-200 pt-4">
+          <summary class="text-sm font-semibold text-ink-900 flex items-center gap-2"><span class="chev">›</span> 6 desafíos clave</summary>
+          <ul class="mt-3 space-y-2 text-sm text-ink-500">
+            <li>· Compras a ciegas sin datos de consumo real.</li>
+            <li>· Dependencia de pocos proveedores sin plan de contingencia.</li>
+            <li>· Cambios de marca sin criterio formal ni auditoría.</li>
+            <li>· Incumplimientos de entrega sin seguimiento sistemático.</li>
+            <li>· Faltantes recurrentes sin protocolo activado.</li>
+            <li>· Evaluación de proveedores ausente o intuitiva.</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- ETAPA B -->
+      <article class="group relative rounded-2xl border border-slate-200 p-7 hover:border-teal-700/40 hover:shadow-md transition bg-white">
+        <div class="flex items-start justify-between">
+          <span class="stage-letter text-5xl font-extrabold text-teal-700/90">B</span>
+          <span class="text-xs font-bold uppercase tracking-wider bg-slate-100 text-ink-700 rounded-full px-3 py-1">2° paso</span>
+        </div>
+        <h3 class="mt-4 text-xl font-bold">Digitalización del Ingreso</h3>
+        <div class="mt-3 flex flex-wrap gap-2 text-xs">
+          <span class="bg-teal-50 text-teal-800 rounded-full px-2.5 py-1 font-semibold">KPI · 100% datos digitales</span>
+          <span class="bg-slate-100 text-ink-700 rounded-full px-2.5 py-1 font-semibold">30–60 días</span>
+        </div>
+        <p class="mt-4 text-sm text-ink-500">Depósito, Compras, Farmacia, Administración, Sistemas / IT.</p>
+        <details class="mt-5 border-t border-slate-200 pt-4">
+          <summary class="text-sm font-semibold text-ink-900 flex items-center gap-2"><span class="chev">›</span> 4 desafíos clave</summary>
+          <ul class="mt-3 space-y-2 text-sm text-ink-500">
+            <li>· Errores de registro que rompen la cadena de datos.</li>
+            <li>· Remitos con errores sin protocolo definido.</li>
+            <li>· Personal multitarea que afecta la precisión del ingreso.</li>
+            <li>· Intercambios con proveedores sin registro formal.</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- ETAPA C -->
+      <article class="group relative rounded-2xl border border-slate-200 p-7 hover:border-teal-700/40 hover:shadow-md transition bg-white">
+        <div class="flex items-start justify-between">
+          <span class="stage-letter text-5xl font-extrabold text-teal-700/90">C</span>
+          <span class="text-xs font-bold uppercase tracking-wider bg-slate-100 text-ink-700 rounded-full px-3 py-1">3° paso</span>
+        </div>
+        <h3 class="mt-4 text-xl font-bold">Depósito Central + Identificación</h3>
+        <div class="mt-3 flex flex-wrap gap-2 text-xs">
+          <span class="bg-teal-50 text-teal-800 rounded-full px-2.5 py-1 font-semibold">KPI · Desperdicio &lt;10%</span>
+          <span class="bg-slate-100 text-ink-700 rounded-full px-2.5 py-1 font-semibold">45–90 días</span>
+        </div>
+        <p class="mt-4 text-sm text-ink-500">Depósito, Farmacia, Jefatura de Enfermería, Sistemas / IT.</p>
+        <details class="mt-5 border-t border-slate-200 pt-4">
+          <summary class="text-sm font-semibold text-ink-900 flex items-center gap-2"><span class="chev">›</span> Desafío principal</summary>
+          <ul class="mt-3 space-y-2 text-sm text-ink-500">
+            <li>· Insumos sin identificación estandarizada: cualquier persona del equipo debe poder ubicar un insumo sin ambigüedad.</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- ETAPA D -->
+      <article class="group relative rounded-2xl border border-slate-200 p-7 hover:border-teal-700/40 hover:shadow-md transition bg-white">
+        <div class="flex items-start justify-between">
+          <span class="stage-letter text-5xl font-extrabold text-teal-700/90">D</span>
+          <span class="text-xs font-bold uppercase tracking-wider bg-slate-100 text-ink-700 rounded-full px-3 py-1">4° paso</span>
+        </div>
+        <h3 class="mt-4 text-xl font-bold">Dispensación y Consumo</h3>
+        <div class="mt-3 flex flex-wrap gap-2 text-xs">
+          <span class="bg-teal-50 text-teal-800 rounded-full px-2.5 py-1 font-semibold">KPI · Cero errores de dispensación</span>
+          <span class="bg-slate-100 text-ink-700 rounded-full px-2.5 py-1 font-semibold">45–90 días</span>
+        </div>
+        <p class="mt-4 text-sm text-ink-500">Enfermería, Farmacia, Servicios Clínicos (Clínica Médica, Cirugía, UTI), Dirección Médica.</p>
+        <details class="mt-5 border-t border-slate-200 pt-4">
+          <summary class="text-sm font-semibold text-ink-900 flex items-center gap-2"><span class="chev">›</span> 4 desafíos clave</summary>
+          <ul class="mt-3 space-y-2 text-sm text-ink-500">
+            <li>· Registro desconectado del acto clínico.</li>
+            <li>· Datos de consumo no confiables.</li>
+            <li>· Baja de stock desfasada en el tiempo.</li>
+            <li>· Sin circuito formal para devolución de insumos no utilizados.</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- ETAPA E -->
+      <article class="group relative rounded-2xl border border-slate-200 p-7 hover:border-teal-700/40 hover:shadow-md transition bg-white">
+        <div class="flex items-start justify-between">
+          <span class="stage-letter text-5xl font-extrabold text-teal-700/90">E</span>
+          <span class="text-xs font-bold uppercase tracking-wider bg-slate-100 text-ink-700 rounded-full px-3 py-1">5° paso</span>
+        </div>
+        <h3 class="mt-4 text-xl font-bold">Tránsito Farmacia → Servicios</h3>
+        <div class="mt-3 flex flex-wrap gap-2 text-xs">
+          <span class="bg-teal-50 text-teal-800 rounded-full px-2.5 py-1 font-semibold">KPI · −70% tiempo en áreas críticas</span>
+          <span class="bg-slate-100 text-ink-700 rounded-full px-2.5 py-1 font-semibold">60–90 días</span>
+        </div>
+        <p class="mt-4 text-sm text-ink-500">Farmacia, Enfermería, Servicios Clínicos, Logística Interna.</p>
+        <details class="mt-5 border-t border-slate-200 pt-4">
+          <summary class="text-sm font-semibold text-ink-900 flex items-center gap-2"><span class="chev">›</span> Desafío principal</summary>
+          <ul class="mt-3 space-y-2 text-sm text-ink-500">
+            <li>· Trayecto sin trazabilidad: cada insumo debe llegar al servicio correcto con registro completo del recorrido.</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- ETAPA F -->
+      <article class="group relative rounded-2xl border border-slate-200 p-7 hover:border-teal-700/40 hover:shadow-md transition bg-white">
+        <div class="flex items-start justify-between">
+          <span class="stage-letter text-5xl font-extrabold text-teal-700/90">F</span>
+          <span class="text-xs font-bold uppercase tracking-wider bg-coral-500/10 text-coral-600 rounded-full px-3 py-1">Arrancar aquí</span>
+        </div>
+        <h3 class="mt-4 text-xl font-bold">Facturación y Recupero</h3>
+        <div class="mt-3 flex flex-wrap gap-2 text-xs">
+          <span class="bg-teal-50 text-teal-800 rounded-full px-2.5 py-1 font-semibold">KPI · 85–95% recupero obras sociales</span>
+          <span class="bg-slate-100 text-ink-700 rounded-full px-2.5 py-1 font-semibold">30–60 días</span>
+        </div>
+        <p class="mt-4 text-sm text-ink-500">Facturación, Auditoría Médica, Farmacia, Enfermería, Dirección Administrativa.</p>
+        <details class="mt-5 border-t border-slate-200 pt-4">
+          <summary class="text-sm font-semibold text-ink-900 flex items-center gap-2"><span class="chev">›</span> 2 desafíos clave</summary>
+          <ul class="mt-3 space-y-2 text-sm text-ink-500">
+            <li>· Pérdida de facturación por falta de documentación.</li>
+            <li>· Recolección de documentación reactiva y desordenada.</li>
+          </ul>
+        </details>
+      </article>
+    </div>
+
+    <p class="mt-10 text-sm text-ink-500 max-w-3xl leading-relaxed">
+      <strong class="text-ink-900">¿Por dónde arrancar?</strong> Recomendamos iniciar por las Etapas <strong>A</strong> y <strong>F</strong> en paralelo: son las de mayor impacto financiero inmediato y menor resistencia operativa. La A genera los datos que alimentan todo el sistema; la F los convierte en recupero económico concreto.
+    </p>
+  </section>
+
+  <!-- Matriz esfuerzo/impacto -->
+  <section id="matriz" class="bg-slate-50 border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-24">
+      <div class="max-w-3xl">
+        <div class="text-xs font-bold uppercase tracking-wider text-teal-700">Priorización</div>
+        <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">Matriz de esfuerzo e impacto</h2>
+        <p class="mt-4 text-ink-500 text-lg leading-relaxed">
+          Esfuerzo = tiempo, recursos y cambio cultural requeridos. Impacto = mejora en eficiencia, seguridad clínica y recupero económico.
+        </p>
+      </div>
+
+      <div class="mt-10 overflow-x-auto">
+        <table class="w-full bg-white rounded-2xl border border-slate-200 overflow-hidden">
+          <thead class="bg-slate-100 text-xs uppercase tracking-wider text-ink-700">
+            <tr>
+              <th class="text-left px-5 py-4 font-bold">Etapa</th>
+              <th class="text-left px-5 py-4 font-bold">Nombre</th>
+              <th class="text-left px-5 py-4 font-bold">Esfuerzo</th>
+              <th class="text-left px-5 py-4 font-bold">Impacto</th>
+              <th class="text-left px-5 py-4 font-bold">Tiempo</th>
+              <th class="text-left px-5 py-4 font-bold">Prioridad</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-sm">
+            <tr class="bg-coral-500/5">
+              <td class="px-5 py-4 font-extrabold text-teal-700">A</td>
+              <td class="px-5 py-4 font-semibold">Inteligencia de Proveedores</td>
+              <td class="px-5 py-4"><span class="inline-block rounded-full bg-teal-50 text-teal-800 font-semibold px-2.5 py-0.5 text-xs">Bajo</span></td>
+              <td class="px-5 py-4"><span class="inline-block rounded-full bg-coral-500/15 text-coral-600 font-semibold px-2.5 py-0.5 text-xs">Alto</span></td>
+              <td class="px-5 py-4 text-ink-500">30–60 días</td>
+              <td class="px-5 py-4 font-semibold text-coral-600">Arrancar aquí</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-4 font-extrabold text-teal-700">B</td>
+              <td class="px-5 py-4 font-semibold">Digitalización del Ingreso</td>
+              <td class="px-5 py-4"><span class="inline-block rounded-full bg-slate-100 text-ink-700 font-semibold px-2.5 py-0.5 text-xs">Medio</span></td>
+              <td class="px-5 py-4"><span class="inline-block rounded-full bg-coral-500/15 text-coral-600 font-semibold px-2.5 py-0.5 text-xs">Alto</span></td>
+              <td class="px-5 py-4 text-ink-500">30–60 días</td>
+              <td class="px-5 py-4 text-ink-500">2° paso</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-4 font-extrabold text-teal-700">C</td>
+              <td class="px-5 py-4 font-semibold">Depósito + Identificación</td>
+              <td class="px-5 py-4"><span class="inline-block rounded-full bg-slate-100 text-ink-700 font-semibold px-2.5 py-0.5 text-xs">Medio</span></td>
+              <td class="px-5 py-4"><span class="inline-block rounded-full bg-slate-100 text-ink-700 font-semibold px-2.5 py-0.5 text-xs">Medio</span></td>
+              <td class="px-5 py-4 text-ink-500">45–90 días</td>
+              <td class="px-5 py-4 text-ink-500">3° paso</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-4 font-extrabold text-teal-700">D</td>
+              <td class="px-5 py-4 font-semibold">Dispensación y Consumo</td>
+              <td class="px-5 py-4"><span class="inline-block rounded-full bg-slate-200 text-ink-900 font-semibold px-2.5 py-0.5 text-xs">Alto</span></td>
+              <td class="px-5 py-4"><span class="inline-block rounded-full bg-coral-500/15 text-coral-600 font-semibold px-2.5 py-0.5 text-xs">Alto</span></td>
+              <td class="px-5 py-4 text-ink-500">45–90 días</td>
+              <td class="px-5 py-4 text-ink-500">4° paso</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-4 font-extrabold text-teal-700">E</td>
+              <td class="px-5 py-4 font-semibold">Tránsito Farmacia → Servicios</td>
+              <td class="px-5 py-4"><span class="inline-block rounded-full bg-slate-100 text-ink-700 font-semibold px-2.5 py-0.5 text-xs">Medio</span></td>
+              <td class="px-5 py-4"><span class="inline-block rounded-full bg-slate-100 text-ink-700 font-semibold px-2.5 py-0.5 text-xs">Medio</span></td>
+              <td class="px-5 py-4 text-ink-500">60–90 días</td>
+              <td class="px-5 py-4 text-ink-500">5° paso</td>
+            </tr>
+            <tr class="bg-coral-500/5">
+              <td class="px-5 py-4 font-extrabold text-teal-700">F</td>
+              <td class="px-5 py-4 font-semibold">Facturación y Recupero</td>
+              <td class="px-5 py-4"><span class="inline-block rounded-full bg-teal-50 text-teal-800 font-semibold px-2.5 py-0.5 text-xs">Bajo</span></td>
+              <td class="px-5 py-4"><span class="inline-block rounded-full bg-coral-500/15 text-coral-600 font-semibold px-2.5 py-0.5 text-xs">Alto</span></td>
+              <td class="px-5 py-4 text-ink-500">30–60 días</td>
+              <td class="px-5 py-4 font-semibold text-coral-600">Arrancar aquí</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 preguntas -->
+  <section id="preguntas" class="max-w-6xl mx-auto px-6 py-20 md:py-24">
+    <div class="grid md:grid-cols-5 gap-10 md:gap-16 items-start">
+      <div class="md:col-span-2">
+        <div class="text-xs font-bold uppercase tracking-wider text-teal-700">Diagnóstico inicial</div>
+        <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">5 preguntas para definir el foco</h2>
+        <p class="mt-4 text-ink-500 leading-relaxed">
+          No hay dos instituciones iguales. Antes de arrancar, ayudamos a la dirección a responder estas 5 preguntas: de ahí sale por qué etapa conviene empezar, con qué equipo y con qué criterio de éxito.
+        </p>
+      </div>
+      <ol class="md:col-span-3 space-y-4">
+        <li class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="flex gap-4">
+            <span class="text-2xl font-extrabold text-coral-500 leading-none">01</span>
+            <div>
+              <h3 class="font-bold">¿Cuál es el problema que más duele hoy?</h3>
+              <p class="mt-2 text-sm text-ink-500">Gasto descontrolado en insumos, errores en dispensación, faltantes que comprometen la atención, o pérdida de facturación. La respuesta define por dónde arrancar.</p>
+            </div>
+          </div>
+        </li>
+        <li class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="flex gap-4">
+            <span class="text-2xl font-extrabold text-coral-500 leading-none">02</span>
+            <div>
+              <h3 class="font-bold">¿Qué capacidad de cambio tiene el equipo hoy?</h3>
+              <p class="mt-2 text-sm text-ink-500">Referentes internos con tiempo y voluntad. Apertura en Farmacia, Enfermería, Compras. El esfuerzo real depende más de las personas que de la tecnología.</p>
+            </div>
+          </div>
+        </li>
+        <li class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="flex gap-4">
+            <span class="text-2xl font-extrabold text-coral-500 leading-none">03</span>
+            <div>
+              <h3 class="font-bold">¿Qué datos existen y en qué estado están?</h3>
+              <p class="mt-2 text-sm text-ink-500">Seis meses de historial de compras, remitos o consumos — aunque sea en papel o Excel. La calidad del dato disponible define cuán rápido se ven los primeros resultados.</p>
+            </div>
+          </div>
+        </li>
+        <li class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="flex gap-4">
+            <span class="text-2xl font-extrabold text-coral-500 leading-none">04</span>
+            <div>
+              <h3 class="font-bold">¿Cuál es el resultado mínimo que justifica seguir?</h3>
+              <p class="mt-2 text-sm text-ink-500">Qué número o situación haría que la dirección diga "esto funciona" a los 60 días. Definirlo antes protege al equipo de criterios cambiantes.</p>
+            </div>
+          </div>
+        </li>
+        <li class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="flex gap-4">
+            <span class="text-2xl font-extrabold text-coral-500 leading-none">05</span>
+            <div>
+              <h3 class="font-bold">¿Quién tiene autoridad para desbloquear?</h3>
+              <p class="mt-2 text-sm text-ink-500">Cuando aparezca resistencia o un dato faltante, quién en la institución puede resolver en menos de 48 horas. Es la diferencia entre un proyecto que avanza y uno que se traba.</p>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section id="contacto" class="bg-ink-900 text-white relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-teal-700/20 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-coral-500/10 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3"></div>
+    <div class="relative max-w-4xl mx-auto px-6 py-24 md:py-32 text-center">
+      <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
+        ¿Evaluamos una etapa en <span class="text-coral-400">tu institución</span>?
+      </h2>
+      <p class="mt-5 text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        Una conversación de 30 minutos alcanza para entender por dónde conviene arrancar, con qué KPI y en qué ventana de tiempo.
+      </p>
+      <div class="mt-10 flex flex-wrap justify-center gap-3">
+        <a href="mailto:njambre.bot@gmail.com?subject=Lean%20Healthcare%20—%20Conversación%20inicial" class="inline-flex items-center gap-2 rounded-full bg-coral-500 text-white font-semibold px-7 py-3.5 hover:bg-coral-600 transition shadow-sm">
+          Agendar conversación
+        </a>
+        <a href="#etapas" class="inline-flex items-center gap-2 rounded-full border border-white/20 text-white font-semibold px-7 py-3.5 hover:bg-white/10 transition">
+          Revisar etapas
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink-900 text-slate-400 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm">
+      <div class="flex items-center gap-2 text-slate-300">
+        <span class="inline-block w-2 h-2 rounded-full bg-coral-500"></span>
+        <strong>Lean Healthcare</strong>
+        <span class="text-slate-500">· Modernización con método y evidencia</span>
+      </div>
+      <div class="text-slate-500">© <span id="year"></span> · Un servicio de Brote</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
