@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caso Municipalidad de San Miguel · Lean Healthcare 3P</title>
+  <meta name="description" content="Cómo la Municipalidad de San Miguel redujo 50% el gasto anual en farmacia aplicando Lean Healthcare: diagnóstico Gemba, trazabilidad QR y dispensación al pie de la cama." />
+  <meta property="og:title" content="Caso Municipalidad de San Miguel · Lean Healthcare 3P" />
+  <meta property="og:description" content="De $10.000 M a $5.000 M de gasto anual en farmacia en un año. Lean Healthcare aplicado a un sistema municipal." />
+  <meta property="og:type" content="article" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            ink: { 900: '#0b1a1a', 700: '#1f2937', 500: '#475569' },
+            teal: { 50: '#ecfdf5', 600: '#0d7b6e', 700: '#0b6359', 800: '#0a4f48' },
+            coral: { 400: '#fb8a6b', 500: '#f47458', 600: '#e15a3f' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: #0b1a1a; }
+    .stage-letter { font-feature-settings: "ss01"; letter-spacing: -0.04em; }
+  </style>
+</head>
+<body class="bg-ink-900 text-white antialiased">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-ink-900/85 backdrop-blur border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-bold text-white">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-coral-500"></span>
+        Lean Healthcare
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="index.html#enfoque" class="hover:text-white">Enfoque 3P</a>
+        <a href="index.html#research" class="hover:text-white">Research</a>
+        <a href="index.html#etapas" class="hover:text-white">Desafíos</a>
+        <a href="index.html#ciclos" class="hover:text-white">Ciclos</a>
+        <a href="index.html#resultados" class="hover:text-white">Resultados</a>
+        <span class="text-coral-400 font-semibold">Caso</span>
+      </nav>
+      <a href="index.html#empezar" class="inline-flex items-center gap-2 rounded-full bg-coral-500 text-white text-sm font-semibold px-4 py-2 hover:bg-coral-600 transition">
+        Conversemos 30 min
+      </a>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="max-w-6xl mx-auto px-6 pt-10">
+    <a href="index.html" class="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-white transition">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+      Volver a Lean Healthcare
+    </a>
+  </div>
+
+  <!-- CASO · MUNICIPALIDAD DE SAN MIGUEL -->
+  <section class="relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-teal-700/20 rounded-full blur-3xl -translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
+    <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-coral-500/15 rounded-full blur-3xl translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
+
+    <div class="relative max-w-6xl mx-auto px-6 py-16 md:py-24">
+      <div class="max-w-3xl">
+        <span class="inline-flex items-center gap-2 rounded-full border border-coral-400/30 bg-coral-500/10 text-coral-400 text-xs font-bold uppercase tracking-wider px-3 py-1">
+          Caso real · B2G
+        </span>
+        <h1 class="mt-5 text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.05]">
+          Municipalidad de<br/>
+          <span class="text-coral-400">San Miguel.</span>
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-slate-300 leading-relaxed">
+          De un sistema de farmacia municipal con software arcaico, compras a ciegas y facturación atascada, a una cadena trazable con QR al pie de la cama. El ahorro llegó antes que la tecnología: primero ordenar, después automatizar.
+        </p>
+        <p class="mt-5 text-base text-slate-400 leading-relaxed max-w-2xl">
+          Marco aplicado: <strong class="text-white">pensamiento Lean Healthcare</strong> — valor definido desde el paciente, eliminación sistemática de desperdicios (mudas), flujo continuo y respeto por las personas. El diagnóstico empieza caminando el <em class="text-white not-italic font-semibold">Gemba</em>: el lugar donde sucede el trabajo real.
+        </p>
+      </div>
+
+      <!-- Métricas headline -->
+      <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-6 backdrop-blur">
+          <div class="text-4xl md:text-5xl font-extrabold text-coral-400 leading-none">−50%</div>
+          <div class="mt-3 text-sm font-semibold text-white">Gasto anual en farmacia</div>
+          <div class="mt-1 text-xs text-slate-400">De $10.000 M a $5.000 M en el primer año.</div>
+        </div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-6 backdrop-blur">
+          <div class="text-4xl md:text-5xl font-extrabold text-coral-400 leading-none">3</div>
+          <div class="mt-3 text-sm font-semibold text-white">Fases de trazabilidad</div>
+          <div class="mt-1 text-xs text-slate-400">Proveedores · Depósito · Cama del paciente.</div>
+        </div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-6 backdrop-blur">
+          <div class="text-4xl md:text-5xl font-extrabold text-coral-400 leading-none">QR</div>
+          <div class="mt-3 text-sm font-semibold text-white">Match medicamento–paciente</div>
+          <div class="mt-1 text-xs text-slate-400">Lote, vencimiento y pulsera verificados en un escaneo.</div>
+        </div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-6 backdrop-blur">
+          <div class="text-4xl md:text-5xl font-extrabold text-coral-400 leading-none">PIC-1</div>
+          <div class="mt-3 text-sm font-semibold text-white">Dispensación en áreas críticas</div>
+          <div class="mt-1 text-xs text-slate-400">Guardia, UTI y Cardiología con baja automática de stock.</div>
+        </div>
+      </div>
+
+      <p class="mt-4 text-xs text-slate-400 max-w-3xl">
+        Datos compartidos por el equipo a cargo de la gestión en entrevistas de research. Ahorros verificados en la primera revisión administrativa tras el reordenamiento de proveedores (2024 → 2025).
+      </p>
+
+      <!-- El punto de partida -->
+      <div class="mt-20">
+        <div class="text-xs font-bold uppercase tracking-wider text-coral-400">El punto de partida</div>
+        <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight max-w-3xl">Diagnóstico antes de tecnología.</h2>
+        <div class="mt-8 grid md:grid-cols-3 gap-5">
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Financiamiento</div>
+            <p class="mt-3 text-sm text-slate-200 leading-relaxed">
+              Facturación trabada: los médicos se negaban a firmar anexos administrativos para obras sociales. Ingresos reales quedaban sin recuperar.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Insumos y proveedores</div>
+            <p class="mt-3 text-sm text-slate-200 leading-relaxed">
+              Dependencia de un oligopolio común a múltiples municipios. Compras sin datos de consumo real. Software de gestión arcaico.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Cultura</div>
+            <p class="mt-3 text-sm text-slate-200 leading-relaxed">
+              Resistencia al control administrativo, incluso entre profesionales que sí adoptaban sistemas equivalentes en el ámbito privado.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gemba primero -->
+      <div class="mt-20">
+        <div class="text-xs font-bold uppercase tracking-wider text-coral-400">El método antes de la herramienta</div>
+        <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight max-w-3xl">Caminar el Gemba. Nombrar los desperdicios.</h2>
+        <p class="mt-5 text-slate-300 leading-relaxed max-w-3xl">
+          En Lean Healthcare no se decide desde una oficina. El equipo va al lugar donde sucede el trabajo real — depósito, enfermería, facturación, guardia — y documenta de primera mano los <strong class="text-white">desperdicios que afectan la experiencia de paciente y profesional</strong>. Recién ahí se prioriza qué mover.
+        </p>
+
+        <div class="mt-10 grid md:grid-cols-3 gap-5">
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+            <div class="text-sm font-bold text-white">Escuchar antes de diseñar</div>
+            <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+              Entrevistas mano a mano con enfermería, farmacia y administración. Con apoyo de IA (Voces) para que emerjan las tensiones que una encuesta de clima no captura.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+            <div class="text-sm font-bold text-white">Mapear el circuito del paciente</div>
+            <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+              Ingreso del insumo → depósito → dispensación → facturación a obra social. Cada nodo, un lugar donde se pierde valor si no hay trazabilidad.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+            <div class="text-sm font-bold text-white">Priorizar una brecha por vez</div>
+            <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+              No se ataca todo a la vez. Se elige la brecha con mayor dolor y menor costo de cambio, y se abre el primer ciclo de mejora ahí.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Las 3 fases -->
+      <div class="mt-20">
+        <div class="text-xs font-bold uppercase tracking-wider text-coral-400">Cómo se implementó</div>
+        <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight max-w-3xl">Tres fases, en orden. Primero ordenar, después automatizar.</h2>
+
+        <div class="mt-10 space-y-4">
+          <!-- Fase 1 -->
+          <article class="rounded-2xl bg-white/5 border border-white/10 p-7 md:p-8">
+            <div class="grid md:grid-cols-12 gap-6 items-start">
+              <div class="md:col-span-3">
+                <div class="flex items-baseline gap-3">
+                  <span class="stage-letter text-6xl font-extrabold text-coral-400 leading-none">01</span>
+                </div>
+                <div class="mt-2 text-xs font-bold uppercase tracking-[0.2em] text-coral-400">Proveedores</div>
+              </div>
+              <div class="md:col-span-9">
+                <h3 class="text-xl md:text-2xl font-extrabold tracking-tight text-white">Ordenar antes de digitalizar</h3>
+                <p class="mt-3 text-slate-300 leading-relaxed">
+                  Depuración de pedidos con los pocos datos de consumo disponibles. Renegociación con proveedores para salir de la dependencia. Sin sistema aún: a "fuerza bruta" para estabilizar.
+                </p>
+                <div class="mt-4 inline-flex items-center gap-2 rounded-full bg-coral-500/15 text-coral-300 text-xs font-semibold px-3 py-1">
+                  Resultado en 1 año: −$5.000 M de gasto anual
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fase 2 -->
+          <article class="rounded-2xl bg-white/5 border border-white/10 p-7 md:p-8">
+            <div class="grid md:grid-cols-12 gap-6 items-start">
+              <div class="md:col-span-3">
+                <div class="flex items-baseline gap-3">
+                  <span class="stage-letter text-6xl font-extrabold text-coral-400 leading-none">02</span>
+                </div>
+                <div class="mt-2 text-xs font-bold uppercase tracking-[0.2em] text-coral-400">Depósito central</div>
+              </div>
+              <div class="md:col-span-9">
+                <h3 class="text-xl md:text-2xl font-extrabold tracking-tight text-white">Empauchadora con QR por unidad</h3>
+                <p class="mt-3 text-slate-300 leading-relaxed">
+                  Ampollas y comprimidos se empauchan individualmente en el depósito central. Cada sobre lleva un QR vinculado al sistema con lote, fecha de vencimiento y fecha de procesamiento. La trazabilidad arranca desde el origen.
+                </p>
+                <div class="mt-4 inline-flex items-center gap-2 rounded-full bg-teal-700/25 text-teal-100 text-xs font-semibold px-3 py-1">
+                  Objetivo: desperdicio por vencimiento &lt;10%
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fase 3 -->
+          <article class="rounded-2xl bg-white/5 border border-white/10 p-7 md:p-8">
+            <div class="grid md:grid-cols-12 gap-6 items-start">
+              <div class="md:col-span-3">
+                <div class="flex items-baseline gap-3">
+                  <span class="stage-letter text-6xl font-extrabold text-coral-400 leading-none">03</span>
+                </div>
+                <div class="mt-2 text-xs font-bold uppercase tracking-[0.2em] text-coral-400">Pie de la cama</div>
+              </div>
+              <div class="md:col-span-9">
+                <h3 class="text-xl md:text-2xl font-extrabold tracking-tight text-white">Match QR medicamento–pulsera del paciente</h3>
+                <p class="mt-3 text-slate-300 leading-relaxed">
+                  Adiós a los "cuadritos del truco" en enfermería. La enfermera escanea el QR del sobre y la pulsera del paciente: si coinciden, se dispensa y se da de baja el stock en el momento. En Guardia, UTI y Cardiología, máquinas dispensadoras PIC-1 vinculan medicación a paciente antes de salir.
+                </p>
+                <div class="mt-4 inline-flex items-center gap-2 rounded-full bg-teal-700/25 text-teal-100 text-xs font-semibold px-3 py-1">
+                  Trazabilidad total: quién, cuándo y a quién
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Aprendizajes clave -->
+      <div class="mt-20">
+        <div class="text-xs font-bold uppercase tracking-wider text-coral-400">Lo que aprendimos</div>
+        <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight max-w-3xl">El desafío es cultural antes que tecnológico.</h2>
+        <p class="mt-5 text-slate-300 leading-relaxed max-w-3xl">
+          Lean Healthcare no es instalar un sistema: es una práctica de <strong class="text-white">humanización de la organización</strong> con mejora continua. La tecnología llega después, al servicio de personas que decidieron mejorar juntas.
+        </p>
+
+        <div class="mt-10 grid md:grid-cols-2 gap-5">
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-7">
+            <div class="text-sm font-bold text-coral-400">Incentivos alineados</div>
+            <p class="mt-3 text-slate-200 leading-relaxed">
+              Se implementaron <strong class="text-white">bonos por facturación</strong> para el cuerpo médico — algo inédito en el sector público. El compromiso con el proceso administrativo cambió notablemente. Es respeto por las personas traducido en economía real.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-7">
+            <div class="text-sm font-bold text-coral-400">Mejora continua, no "proyecto"</div>
+            <p class="mt-3 text-slate-200 leading-relaxed">
+              Los cambios bruscos generan fricción. Se segmentó en <strong class="text-white">células pequeñas</strong> con ciclos cortos (Kaizen): cada pequeño éxito facilita la adopción siguiente y construye capacidad interna.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-7">
+            <div class="text-sm font-bold text-coral-400">Medir lo que el paciente vive</div>
+            <p class="mt-3 text-slate-200 leading-relaxed">
+              Los KPIs financieros son síntoma. Lo que sostiene la mejora es la <strong class="text-white">experiencia reportada por paciente y profesional</strong> (PREMs y PROMs): tiempos, seguridad, confianza, carga administrativa real.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-7">
+            <div class="text-sm font-bold text-coral-400">Patrones replicables</div>
+            <p class="mt-3 text-slate-200 leading-relaxed">
+              Los problemas de fondo — especialmente la dependencia del oligopolio de proveedores — <strong class="text-white">son comunes a muchas municipalidades</strong>. El caso se exporta con adaptaciones acotadas, no con copy-paste.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-7">
+            <div class="text-sm font-bold text-coral-400">Diagnóstico profundo antes de actuar</div>
+            <p class="mt-3 text-slate-200 leading-relaxed">
+              Antes de intervenir en otra jurisdicción: autodiagnóstico, entrevistas mano a mano y <strong class="text-white">research con IA</strong> para identificar tensiones y viabilidad política del cambio.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-7">
+            <div class="text-sm font-bold text-coral-400">Valor desde el paciente</div>
+            <p class="mt-3 text-slate-200 leading-relaxed">
+              Cada decisión — qué proveedor, qué medicamento, qué circuito — se valida con una pregunta Lean: <em class="text-white not-italic">¿esto agrega valor al paciente o solo trabajo al sistema?</em>. Todo lo que no agrega valor es un desperdicio a eliminar.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA final -->
+      <div class="mt-16 rounded-3xl bg-gradient-to-br from-coral-500/15 via-white/5 to-teal-700/15 border border-white/10 p-8 md:p-10">
+        <div class="grid md:grid-cols-3 gap-6 items-center">
+          <div class="md:col-span-2">
+            <h3 class="text-2xl md:text-3xl font-extrabold tracking-tight text-white">¿Tu municipio o red hospitalaria está en este punto?</h3>
+            <p class="mt-3 text-slate-300 leading-relaxed">
+              Si reconocés al menos dos de los dolores del punto de partida, empezamos por un diagnóstico de brechas y priorizamos juntos la primera intervención.
+            </p>
+          </div>
+          <div>
+            <a href="index.html#empezar" class="inline-flex items-center gap-2 rounded-full bg-coral-500 text-white font-semibold px-6 py-3.5 hover:bg-coral-600 transition shadow-sm">
+              Hacer el diagnóstico →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navegación inferior -->
+      <div class="mt-16 pt-10 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
+        <a href="index.html" class="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-white transition">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+          Volver a Lean Healthcare
+        </a>
+        <a href="index.html#empezar" class="inline-flex items-center gap-2 rounded-full border border-white/20 text-white text-sm font-semibold px-5 py-2.5 hover:bg-white/10 transition">
+          Conversemos 30 min →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm">
+      <div class="flex items-center gap-2 text-slate-300">
+        <span class="inline-block w-2 h-2 rounded-full bg-coral-500"></span>
+        <strong>Lean Healthcare 3P</strong>
+        <span class="text-slate-500">· Paciente · Profesionales · Procesos</span>
+      </div>
+      <div class="text-slate-500">© <span id="year"></span> · Un servicio de Brote</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
